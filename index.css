@@ -172,17 +172,23 @@ nav#navbar {
   border-right: 1px solid #aaa;
 }
 
+div.nav-container {
+  position: sticky;
+  top: 0;
+}
+
 nav#navbar header {
   padding: 1rem;
   text-align: center;
 }
 
-.nav-container {
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   overflow-y: auto;
-  height: 100vh;
+  height: calc(100vh - 75.2px);
+  border-top: 1px solid #aaa;
 }
 
 .navlink {
@@ -198,7 +204,6 @@ nav#navbar header {
 
 #main-doc {
   padding: 2rem;
-  height: 100vh;
   overflow-y: auto;
   background: #fff;
 }
@@ -214,9 +219,8 @@ nav#navbar header {
     border-bottom: 1px solid #aaa;
   }
 
-  .nav-container {
-    border-top: 1px solid #aaa;
-    height: calc(100% - 75px);
+  nav ul {
+    height: calc(300px - 75.2px);
   }
 
   #main-doc {
