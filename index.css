@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Roboto+Mono&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  color: #4d4e53;
+  overflow-x: hidden;
+}
+
+ul {
+  padding-left: 2rem;
+  margin: 0.5rem 0;
+}
+
+li {
+  margin: 0.5rem 0 0 0.5rem;
+}
+
+code {
+  display: block;
+  padding: 15px;
+  margin: 10px;
+  line-height: 2;
+  word-wrap: normal;
+  word-break: normal;
+  white-space: pre-line;
+  text-align: left;
+  position: relative;
+  font-family: "Roboto Mono", monospace;
+  background-color: #f7f7f7;
+  font-size: 0.9em;
+}
+
+article {
+  margin: 1rem;
+}
+
+header {
+  font-size: 1.8em;
+  color: #000;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+}
+
+nav#navbar {
+  width: clamp(275px, 20vw, 350px);
+  flex-grow: 1;
+  flex-shrink: 0;
+  border-right: 1px solid #aaa;
+}
+
+nav#navbar header {
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav-container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.navlink {
+  margin: 0;
+  padding: 0.5rem 1.5rem;
+  border-top: 1px solid #aaa;
+}
+
+.navlink a {
+  text-decoration: none;
+  color: #1966d3;
+}
+
+#main-doc {
+  padding: 2rem;
+  height: 100vh;
+  overflow-y: auto;
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+
+  nav#navbar {
+    min-width: 100%;
+    height: 300px;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .nav-container {
+    border-top: 1px solid #aaa;
+    height: calc(100% - 75px);
+  }
+
+  #main-doc {
+    overflow-y: hidden;
+  }
+}
